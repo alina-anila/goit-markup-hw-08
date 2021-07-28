@@ -1,0 +1,53 @@
+.stenghth-section {
+    padding-top: 89px;
+    padding-bottom: 0px;
+}
+.strengths-list {  
+
+    & .strengths-list__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var( --secondary-text-color)
+    }
+
+    & .strengths-list__item {
+    width: 270px;
+    }
+}
+.main__strengths-list{
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.strengths-list__item {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.strengths-list__icon-container {
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.strengths-list__title {
+    margin-bottom: 10px;
+}
+
+.strengths-list__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-top: 0px;
+}
