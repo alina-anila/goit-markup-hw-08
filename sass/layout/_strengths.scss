@@ -1,6 +1,7 @@
 .stenghth-section {
     padding-top: 89px;
     padding-bottom: 0px;
+
 }
 .strengths-list {  
 
@@ -67,6 +68,9 @@
         display: flex;
         justify-content: center;
     }
+    .strengths-list__item:last-child {
+        margin-bottom: 30px;
+    }
 }
 
 // Smartphone Viewport from 480px to 768px
@@ -89,6 +93,9 @@
         display: flex;
         justify-content: center;
     }
+    .strengths-list__item:last-child {
+        margin-bottom: 30px;
+    }
 }
 
 // Tablet Viewport from 768px to 1199px
@@ -107,6 +114,11 @@
         margin-bottom: 30px;
         }
     }
+    .strengths-list__item:nth-child(3),
+    .strengths-list__item:nth-child(4) {
+        margin-bottom: 30px;
+    }
+
 }
 
 // Desktop viewport from 1200px
