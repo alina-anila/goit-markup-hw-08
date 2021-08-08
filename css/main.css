@@ -1106,17 +1106,6 @@ img {
   padding-bottom: 205px;
 }
 
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero_img.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -1157,7 +1146,7 @@ img {
   }
   .overlay {
     max-width: 100%;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-mobile.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero/hero-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1176,7 +1165,7 @@ img {
   }
   .overlay {
     max-width: 100%;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero/hero-mobile@2x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1196,7 +1185,7 @@ img {
   .hero.overlay {
     max-width: 480px;
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/hero-mobile.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero/hero-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1216,7 +1205,7 @@ img {
   .hero.overlay {
     max-width: 480px;
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero/hero-mobile@2x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1236,7 +1225,7 @@ img {
   .hero.overlay {
     max-width: 768px;
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero/hero-tablet.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1256,7 +1245,7 @@ img {
   .hero.overlay {
     max-width: 768px;
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero/hero-tablet@2x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1280,7 +1269,7 @@ img {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-desktop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero/hero-desktop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1310,7 +1299,7 @@ img {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-desktop@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero/hero-desktop@2x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2055,26 +2044,6 @@ img {
   }
 }
 
-.projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-  margin-right: 0;
-}
-
-.projects-item {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 90px) / 3);
-}
-
-.links:hover,
-.links:focus {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: box-shadow var(--transition-duration) var(--timing-function);
-}
-
 .projects-aria-overlay {
   position: relative;
   overflow: hidden;
@@ -2182,18 +2151,21 @@ img {
 
 @media screen and (min-width: 1200px) {
   .projects-list {
-    margin-left: -30px;
-    margin-top: -30px;
     display: flex;
     flex-wrap: wrap;
-  }
-  .projects-list .links {
-    display: block;
+    margin-left: -30px;
+    margin-top: -30px;
+    margin-right: 0;
   }
   .projects-item {
-    display: block;
     margin-left: 30px;
     margin-top: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  .links:hover,
+  .links:focus {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: box-shadow var(--transition-duration) var(--timing-function);
   }
 }
 /*# sourceMappingURL=main.css.map */
