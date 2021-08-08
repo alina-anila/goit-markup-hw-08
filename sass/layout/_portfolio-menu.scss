@@ -1,12 +1,3 @@
-.works-directions {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-
-    & .buttons:not(:last-child){
-    margin-right: 8px;
-    }
-}
 
 .works-btn {   
     height: 38px;
@@ -47,4 +38,73 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;  
     transition: box-shadow var(--transition-duration) var(--timing-function);         
+}
+
+@media screen and (max-width: 479px) {
+    .works-directions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 50px;
+    
+        & .buttons:not(:last-child){
+        margin-right: 8px;
+        }
+        & .buttons:nth-child(1),
+        .buttons:nth-child(2),
+        .buttons:nth-child(3) {
+          margin-bottom: 15px;
+      }
+    }
+    
+
+}
+
+// Smartphone viewport from 480px - 767px
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .works-directions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 50px;
+    
+        & .buttons:not(:last-child){
+        margin-right: 8px;
+        }
+        & .buttons:nth-child(1),
+          .buttons:nth-child(2),
+          .buttons:nth-child(3) {
+            margin-bottom: 15px;
+        }
+                
+    }
+}
+
+// Tablet Viewport from 768px to 1199px
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .works-directions {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    
+        & .buttons:not(:last-child){
+        margin-right: 8px;
+        }
+    }
+}
+
+// Desktop viewport from 1200px
+
+@media screen and (min-width: 1200px) {
+    .works-directions {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    
+        & .buttons:not(:last-child){
+        margin-right: 8px;
+        }
+    }
 }
